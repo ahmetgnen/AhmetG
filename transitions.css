@@ -1,0 +1,23 @@
+section div {
+    width: 75px;
+    height: 75px;
+    background-color: aqua;
+    margin: 15px 0;
+    transition: margin-left 3s;
+}
+section:hover div {
+    margin-left: 450px;
+}
+
+div:nth-of-type(1){
+    transition-timing-function: ease-in;
+}
+div:nth-of-type(2){
+    transition-timing-function: cubic-bezier(0.36, 0, 0.66, -0.56);
+}
+div:nth-of-type(3){
+    transition-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
